@@ -58,6 +58,12 @@ body {
     letter-spacing: -0.5px;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .question {
     font-weight: 600;
     color: #cccccc;
@@ -136,4 +142,5 @@ a:hover {
         font-size: 0.75rem;
         padding: 14px;
     }
+    
 }
