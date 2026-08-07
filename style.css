@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    line-height: 1.6;
+    position: relative;
+}
+
+
+.block {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+    border-radius: 24px;
+    background: rgba(210, 194, 194, 0.086) 100%;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: none;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.goodbye-center {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.question {
+    font-weight: 600;
+    color: #cccccc;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+.answer {
+    font-weight: 400;
+    color: #aaaaaa;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    border-left: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.code,
+.term {
+    font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 16px 0;
+    overflow-x: auto;
+    white-space: pre;
+    color: #d0d0d0;
+}
+
+.code {
+    color: #e8e8e8;
+}
+
+.term {
+    color: #c0c0c0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.12) 50%,
+        transparent 100%
+    );
+    margin: 20px 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: border-color 0.2s ease;
+}
+
+a:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 600px) {
+    .block {
+        padding: 24px 20px;
+        border-radius: 20px;
+    }
+
+    .title,
+    .goodbye-center {
+        font-size: 1.6rem;
+    }
+
+    .code,
+    .term {
+        font-size: 0.75rem;
+        padding: 14px;
+    }
+}
